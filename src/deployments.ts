@@ -19,10 +19,12 @@ export const DEPLOYMENTS: Record<'testnet' | 'mainnet', Deployment> = {
     deployBlock: 69638100n,
   },
   mainnet: {
-    escrow: undefined,
-    deployBlock: undefined,
+    // Deployed from the owner's wallet with the in-app Deploy card. Deploy tx:
+    // 0xf360bf0fda031a1e500d56cc7e4153397430f3835c2be5649571e732973b16c7
+    escrow: '0x5D1333bA6E53Cb3A5Ff26Ff22cC1d4E9c8A49715',
+    deployBlock: 28645318n,
   },
 }
 
-/** Network the app opens on until a visitor picks another. Set to 'mainnet' for the live round. */
-export const DEFAULT_NETWORK: 'testnet' | 'mainnet' = 'testnet'
+/** Network the app opens on until a visitor picks another. */
+export const DEFAULT_NETWORK: 'testnet' | 'mainnet' = 'mainnet'

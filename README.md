@@ -11,18 +11,24 @@ Built with [Arc Studio](https://studio.arc.io)
 - Held requests expire at the deadline the agent sets, capped by the owner.
 - Deploy your own escrow from the app with your browser wallet, or paste an existing one.
 
-## Testnet deployment
+## Deployments
 
-A live demo escrow is deployed on Arc Testnet:
+Arc Mainnet (live):
 
-- Contract: [`0xd212c6df078f0fcf981744c04921ab7ef9bbaac3`](https://explorer.testnet.arc.io/address/0xd212c6df078f0fcf981744c04921ab7ef9bbaac3)
+- Contract: [`0x5D1333bA6E53Cb3A5Ff26Ff22cC1d4E9c8A49715`](https://explorer.arc.io/address/0x5D1333bA6E53Cb3A5Ff26Ff22cC1d4E9c8A49715)
+- Deploy transaction: [`0xf360bf0f…73b16c7`](https://explorer.arc.io/tx/0xf360bf0fda031a1e500d56cc7e4153397430f3835c2be5649571e732973b16c7) (block 28645318)
 - Owner: `0x548c68cD338442eE5C64D43cd3061C978aE2cF98`
 - Token: Arc USDC `0x3600000000000000000000000000000000000000` (6 decimals)
 - Longest hold: 7 days
 
-Mainnet has no escrow configured yet. Follow [DEPLOY_MAINNET.md](DEPLOY_MAINNET.md) to deploy your own, from the command line or from your browser wallet using the Deploy card in the app.
+Arc Testnet (demo):
 
-This is unaudited software. The contract has had automated tests and a best-effort security review, not an independent audit. Get an independent audit before putting meaningful funds in, and start with cents.
+- Contract: [`0xd212c6df078f0fcf981744c04921ab7ef9bbaac3`](https://explorer.testnet.arc.io/address/0xd212c6df078f0fcf981744c04921ab7ef9bbaac3)
+- Same owner, token and hold settings as mainnet
+
+The app opens on Mainnet and has a Testnet toggle in the header. To deploy your own escrow, follow [DEPLOY_MAINNET.md](DEPLOY_MAINNET.md), from the command line or from your browser wallet using the Deploy card in the app.
+
+The mainnet escrow uses real USDC. This is unaudited software: the contract has had automated tests and a best-effort security review, not an independent audit. Get an independent audit before putting meaningful funds in, and start with cents.
 
 ## Tech stack
 
